@@ -406,10 +406,10 @@ namespace Skeleton_Program
                 if (direction == 'L' || direction == 'l')
                 {
                     Library();
-                    Console.WriteLine("You check the bodies each of them have bite marks on different areas of their bodies");
-                    Console.WriteLine("They both start to move and swiftly attack you. \nYou died");
-                    Console.ReadLine();
-                    Died();
+                    //Console.WriteLine("You check the bodies each of them have bite marks on different areas of their bodies");
+                   // Console.WriteLine("They both start to move and swiftly attack you. \nYou died");
+                   // Console.ReadLine();
+                   // Died();
                 }
                 else if (direction == 'R' || (direction == 'r'))
                 {
@@ -688,8 +688,8 @@ namespace Skeleton_Program
                     Console.ReadLine();
                     Died();
 
-                   
-                    
+
+
                 }
             }
 
@@ -730,44 +730,23 @@ namespace Skeleton_Program
             {
                 inventory[4] = "food";
                 Console.WriteLine("You grab the bags of dried food and stuff them in your pockets");
-                string food = "yes";
-                Console.WriteLine("Wold you like to grab any other item y/n?");
-                char user = char.Parse(Console.ReadLine());
-                if (user == 'y')
-                {
-                    Console.WriteLine("Now that you know where you can find some supplies, you grab yourself a bottle of water and chug it. ");
+                Console.WriteLine("Now that you know where you can find some supplies, you grab yourself a bottle of water and chug it. ");
+                Console.WriteLine("You're satisfied with what you have and continue exploring the cafeteria");
 
-                }
-                else if (user == 'n')
-                {
-                    Console.WriteLine("You're satisfied with what you have and continue exploring the cafeteria");
-                }
             }
             else if (choice == "water")
             {
                 inventory[4] = "water";
                 Console.WriteLine("You grab yourself a bottle of water and chug it");
-
-                Console.WriteLine("Wold you like to grab any other item?");
-                char user = char.Parse(Console.ReadLine());
-                if (user == 'y')
-                {
-                    Console.WriteLine("Now that you know where you can find some supplies, you grab yourself a few packets of some dried food and stuff them in your pockets. ");
-
-                }
-                else if (user == 'n')
-                {
-                    Console.WriteLine("You're satisfied with what you have and continue exploring the cafeteria");
-                    ////
-                    Console.WriteLine("Whilst exploring do you decide to go to cell block 2 or keep expolering the cafeteria\n(Y)es to enter cell block 2 or (N)o to stay in the cafetria");
-
-                    choice = Console.ReadLine().ToLower();
-                    cellBlock2();
-
-
-                }
-
+                Console.WriteLine("Now that you know where you can find some supplies, you grab yourself a few packets of some dried food and stuff them in your pockets. ");
+                Console.WriteLine("You're satisfied with what you have and continue exploring the cafeteria");
+       
             }
+            Console.WriteLine("Whilst exploring do you decide to go to cell block 2 ");
+            //or keep exploring the cafeteria\n(Y)es to enter cell block 2 or (N)o to stay in the cafetria
+            Console.ReadLine();
+            //choice = Console.ReadLine().ToLower();
+            cellBlock2();
 
 
 
