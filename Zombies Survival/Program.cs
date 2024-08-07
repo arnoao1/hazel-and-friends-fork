@@ -763,7 +763,7 @@ namespace Skeleton_Program
             Console.WriteLine("You walk through cellblock2.");
             //add things 2 cellblock 2
             Console.ReadLine();
-            Exit();
+            exit();
         }
 
         static void hallway()
@@ -1249,7 +1249,7 @@ namespace Skeleton_Program
             if (Word == 'y' || Word == 'Y')
             {
                 Console.WriteLine("You run towards the exit door and crash through");
-                //exit();
+                exit();
             }
 
 
@@ -1377,7 +1377,7 @@ namespace Skeleton_Program
             if (answer == 'y' || answer == 'Y')
             {
                 Console.WriteLine("You run towards the exit door and crash through");
-                //exit();
+                exit();
             }
             else
             {
@@ -1391,7 +1391,7 @@ namespace Skeleton_Program
             }
 
         }
-        static void Exit()
+        static void exit()
         {
             //add the ending
             Console.WriteLine("the end");
