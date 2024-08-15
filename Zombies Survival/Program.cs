@@ -713,7 +713,7 @@ namespace Skeleton_Program
             Console.WriteLine("You pick up the piece of paper and examine it.");
             Thread.Sleep(1000);
             Console.WriteLine("On further examination you see that it is the map of the prison");
-            inventory[2] = "Map";
+            inventory.Add("Map");
             Thread.Sleep(1000);
             Console.WriteLine("You examine the map carefully slowly growing board of it,\nyou scrunch up the map and put it into your pocket and move on");
             Thread.Sleep(1000);
