@@ -1609,7 +1609,7 @@ namespace Skeleton_Program
         }
         static void Exit()
         {
-            //Exit intro
+            //Exit intro//
             Console.WriteLine("The horde of zombies moves closer, their groans filling the air with a sense of impending doom \n" +
                 "Your mind races with the weight of the decision that could determine your fate. Every second counts, " +
                 "and you frantically consider your options.");
